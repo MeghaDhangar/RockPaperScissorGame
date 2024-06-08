@@ -15,12 +15,10 @@ const genCompChoice = () => {
   return options[ranIdx];
 }
 
-
 const drawGame = () => {
   msg.innerText = "Game was draw, Play Again !";
   msg.style.backgroundColor="#081b31";
 }
-
 
 const showWin = (userWin,userChoice,CompChoice) => {
   if (userWin) {
