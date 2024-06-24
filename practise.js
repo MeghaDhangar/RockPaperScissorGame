@@ -14,7 +14,6 @@ const genCompChoice = () => {
   const ranIdx = Math.floor(Math.random() * 3);
   return options[ranIdx];
 }
-
 const drawGame = () => {
   msg.innerText = "Game was draw, Play Again !";
   msg.style.backgroundColor="#081b31";
@@ -58,7 +57,6 @@ const playGame = (userChoice) => {
     showWin(userWin,CompChoice,userChoice)
   }
 };
-
 
 choices.forEach((choice) => {
   choice.addEventListener("click", () => {
