@@ -4,19 +4,14 @@ let compScore = 0;
 
 const choices = document.querySelectorAll(".choice");
 const msg = document.querySelector("#msg")
-
 const userScorePara = document.querySelector("#user-score");
 const compScorePara = document.querySelector("#comp-score")
-
- 
 const genCompChoice = () => {
   // ROCK PAPER SCICCORS
   let options = ["rock", "paper", "scissor"];
   const ranIdx = Math.floor(Math.random() * 3);
   return options[ranIdx];
 }
-
-
 const drawGame = () => {
   msg.innerText = "Game was draw, Play Again !";
   msg.style.backgroundColor="#081b31";
